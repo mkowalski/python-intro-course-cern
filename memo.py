@@ -7,6 +7,10 @@ def fib(n):
     return fib(n-1)+fib(n-2)
 
 
+def fib(n):
+    return reduce(lambda (a, b), _: (a+b, a), [None]*n, (1, 0))[0]
+
+
 def time(fn, *args):
     start = Time()
     res = fn(*args)
