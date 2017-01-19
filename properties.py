@@ -36,3 +36,4 @@ assert r.w == 4; assert r.h == 3; assert r.a == 12
 
 r.a = 6
 assert r.w == 2; assert r.h == 3; assert r.a == 6
+
